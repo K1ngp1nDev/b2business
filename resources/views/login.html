@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d33db132e0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.video.play.png">
+</head>
+<body>
+    <header class="header sticky-top">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar input-group align-items-center">
+                            <a href="#" class="handle_margin_nav">
+                                <img src="img/New-business-logo-UA.svg" alt="logo" class='logo'>
+                            </a>
+                            <input type="text" class="form-control input-search" 
+                            placeholder="Пошук">
+                            <div class="dropdown">
+                                <button class="form-control dropdown-toggle bg-light region_search" 
+                                id="navbarDropdown" role="button" 
+                                data-toggle="dropdown" 
+                                aria-haspopup="true" 
+                                aria-expanded="false"><span>Київська область</span></button>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Київська область</a>
+                                    <a class="dropdown-item" href="#">Київська область</a>
+                                    <a class="dropdown-item" href="#">Київська область</a>
+                                </div>
+                                </div>
+                            <div class="input-group-append handle_margin_nav">
+                                <button class="btn btn-search" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                            <button type="button" class="btn btn-login handle_margin_nav handle_padding_btn">Увійти</button>
+                            
+                            <button class="navbar-dark navbar-toggler navbar-light" 
+                                    type="button" data-toggle="collapse" 
+                                    data-target="#navbar" 
+                                    aria-controls="navbarSupportedContent" 
+                                    aria-expanded="false" 
+                                    aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav text-right">
+                                <li class="nav-item"><a class="nav-link" href="#link-1">Меню 1</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-2">Меню 2</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-3">Меню 3</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-4">Меню 4</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-5">Меню 5</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+    </header>
+    <section class="container login-section--wrapper">
+    	    <div class="row">
+                <div class="col-sm-12 panel">
+                    <div class="panel-login">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="active" id="login-form-link">Вхід</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" id="register-form-link">Реєстрація</a>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <form id="login-form" action="#" method="post" role="form" style="display: block;">
+                                        <div class="form-group">
+                                            <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Email" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Пароль">
+                                        </div>
+                                        <div class="form-group mb-2">
+                                            <input type="submit" name="login-submit" id="login-submit" tabindex="3" class="form-control btn btn-login" value="Увійти">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="text-center">
+                                                        <a href="#" tabindex="4" class="forgot-password">Забули пароль?</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+								    </form>
+								    <form id="register-form" action="#" method="post" role="form" style="display: none;">
+									<div class="form-group">
+										<input type="text" name="username" tabindex="1" class="form-control" placeholder="ФІО" value="">
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" tabindex="2" class="form-control" placeholder="Паспортні дані" value="">
+									</div>
+                                    <div class="form-group">
+										<input type="text" name="username" tabindex="3" class="form-control" placeholder="ЄДКПОУ" value="">
+									</div>
+                                    <fieldset disabled>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" tabindex="4" placeholder="">
+                                        </div>
+                                    </fieldset>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" tabindex="5" placeholder="E-mail">
+                                    </div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" tabindex="6" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<input type="password" name="confirm-password" id="confirm-password" tabindex="7" class="form-control" placeholder="Confirm Password">
+									</div>
+									<div class="form-group">
+                                        <input type="submit" name="register-submit" id="register-submit" tabindex="5" class="form-control btn btn-register" value="Зареєструватись">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <script>
+        $(function() {
+
+        $('#login-form-link').click(function(e) {
+            $("#login-form").fadeIn(0);
+            $("#register-form").fadeOut(0);
+            $('#register-form-link').removeClass('active');
+            $(this).addClass('active');
+            e.preventDefault();
+        });
+        $('#register-form-link').click(function(e) {
+            $("#register-form").fadeIn(0);
+            $("#login-form").fadeOut(0);
+            $('#login-form-link').removeClass('active');
+            $(this).addClass('active');
+            e.preventDefault();
+        });
+
+    });
+
+    </script>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <nav class="footer-nav">
+                    <div class="col-lg-3 footer-nav-title-costumers">
+                        <ul class="footer-nav-list">
+                            <span>Покупателям</span>
+                            <li class="footer-nav-item"><a href="#">Как стать покупателем?</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-nav-title-sellers">
+                        <ul class="footer-nav-list">
+                            <span>Продавцам</span>
+                            <li class="footer-nav-item"><a href="#">Как стать покупателем?</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-nav-title-aboutus">
+                        <ul class="footer-nav-list">
+                            <span>О нас</span>
+                            <li class="footer-nav-item"><a href="#">Как стать покупателем?</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-nav-title-contacts">
+                        <ul class="footer-nav-list">
+                            <span>Контакты</span>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

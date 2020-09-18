@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    background-color: #E5E5E5 !important;
+}
+
+.company-header--wrapper {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.logo-company {
+    max-width: 200px;
+}
+
+.company-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.company-contacts-buttons--wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.btn-add-offer {
+    width: 235px;
+    height: 45px;
+    background: #4B7FDB !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    line-height: 30px !important;
+    color: #fff !important;
+}
+
+.btn-add-manager,
+.btn-change-plan,
+.btn-edit-profile {
+    width: 235px;
+    height: 45px;
+    border: 1px solid #4B7FDB !important;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.05));
+    border-radius: 3px;
+    font-size: 14px !important;
+    line-height: 30px !important;
+}
+
+.btn-add-manager:hover,
+.btn-change-plan:hover,
+.btn-edit-profile:hover {
+    color: #fff !important;
+    background-color: #4B7FDB;
+}
+
+.btn-add-manager,
+.btn-edit-profile{
+    margin: 20px 0;
+}
+
+.company-contacts-list {
+    list-style-type: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.company-contacts-item {
+    padding-bottom: 10px;
+}
+
+.company-contacts-item:first-of-type {
+    font-weight: 500;
+}
+
+.company-tables-tabs-wrapper {
+    padding: 0 !important;
+}
+
+.table-offers,
+.table-chats {
+    width: 100%;
+    border: 0px;
+    border-collapse: collapse;
+
+}
+
+.table-offers thead,
+.table-chats thead {
+    font-weight: bold;
+}
+
+.table-offers td,
+.table-chats td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #e8e9eb;
+}
+
+.tab-content {
+    background-color: #fff;
+}
+
+.nav-link-tab {
+    width: 100%;
+    text-align: center;
+}
+
+.company-tables-tabs-wrapper
+.nav-tabs
+.nav-link {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.company-tables-tabs-wrapper
+.nav-tabs
+.nav-link:hover {
+    border-color: rgb(214, 206, 206) !important;
+    box-sizing: border-box !important;
+}

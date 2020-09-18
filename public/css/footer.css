@@ -1,0 +1,36 @@
+.footer {
+    background-color: #2A2E3A;
+}
+
+.footer-nav {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    min-height: 300px;
+    padding: 55px 0 0 0;
+}
+
+.footer-nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav-list span {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.footer-nav-item {
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+.footer-nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav-item:first-of-type {
+    padding-top: 20px;
+    /* border: 1px solid red; */
+}

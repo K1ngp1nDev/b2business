@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d33db132e0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.video.play.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.css">
+</head>
+<body>
+    <header class="header sticky-top">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar input-group align-items-center">
+                            <a href="#" class="handle_margin_nav">
+                                <img src="img/New-business-logo-UA.svg" alt="logo" class='logo'>
+                            </a>
+                            <input type="text" class="form-control input-search" 
+                            placeholder="Пошук">
+                            <div class="dropdown">
+                                <button class="form-control dropdown-toggle bg-light region_search" 
+                                id="navbarDropdown" role="button" 
+                                data-toggle="dropdown" 
+                                aria-haspopup="true" 
+                                aria-expanded="false"><span>Київська область</span></button>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Київська область</a>
+                                    <a class="dropdown-item" href="#">Київська область</a>
+                                    <a class="dropdown-item" href="#">Київська область</a>
+                                </div>
+                                </div>
+                            <div class="input-group-append handle_margin_nav">
+                                <button class="btn btn-search" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                            <button type="button" class="btn btn-login handle_margin_nav handle_padding_btn">Увійти</button>
+                            
+                            <button class="navbar-dark navbar-toggler navbar-light" 
+                                    type="button" data-toggle="collapse" 
+                                    data-target="#navbar" 
+                                    aria-controls="navbarSupportedContent" 
+                                    aria-expanded="false" 
+                                    aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav text-right">
+                                <li class="nav-item"><a class="nav-link" href="#link-1">Меню 1</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-2">Меню 2</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-3">Меню 3</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-4">Меню 4</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-5">Меню 5</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+    </header>
+    <section class="add-section-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="add-section-title">Розміщення оголошення</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <form> 
+                                <div class="form-row form-row--add">
+                                    <div class="form-group col-sm-12"> 
+                                        <input type="text" class="form-control" 
+                                        aria-describedby="title" placeholder="Назва">
+                                    </div> 
+                                    <!--  -->
+                                    <div class="form-dropzone-wrapper col-sm-12 form-row" >
+                                        <!-- <div action="upload.php" id="firstDropZone" class="dropzone form-group col-sm-3"></div> -->
+                                        <div action="upload.php" class="dropzone form-group col-sm-2"></div>
+                                        <div action="upload.php" class="dropzone form-group col-sm-2"></div>
+                                        <div action="upload.php" class="dropzone form-group col-sm-2"></div>
+                                        <div action="upload.php" class="dropzone form-group col-sm-2"></div>
+                                        <div action="upload.php" class="dropzone form-group col-sm-2"></div>
+                                        <div action="upload.php" class="dropzone form-group col-sm-2"></div>
+                                        <script>
+                                            // var replace = document.getElementById('firstDropZone');
+                                            // console.log(replace.length, ' replace.length');
+                                            // for(var i = 0; i < replace.length; i++) {
+                                                // console.log(i, ' i');
+                                                // i.outerText = 'Додати фото';
+                                            // }
+                                            // var btn = replace.getElementsByTagName('button');
+                                            // console.log(btn, ' btn');
+                                            // console.log(btn['button.dz-button'], ' replace');
+                                        // var tmp = document.getElementsByClassName('button.dz-button');
+
+                                        // console.log(tmp)
+                                        </script>
+                                    </div>
+
+                                    <!--  -->
+                                    <div class="form-group col-sm-6">
+                                        <div class="dropdown add-category">
+                                            <button class="form-control dropdown-toggle" 
+                                                    id="navbarDropdown" role="button" 
+                                                    data-toggle="dropdown" 
+                                                    aria-haspopup="true" 
+                                                    aria-expanded="false"><span>Категорія</span>
+                                            </button>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Категорія</a>
+                                                <a class="dropdown-item" href="#">Категорія</a>
+                                                <a class="dropdown-item" href="#">Категорія</a>
+                                                <a class="dropdown-item" href="#">Категорія</a>
+                                                <a class="dropdown-item" href="#">Категорія</a>
+                                                <a class="dropdown-item" href="#">Категорія</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-sm-6"> 
+                                        <input type="text" class="form-control" aria-describedby="price" placeholder="Ціна">
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <div class="dropdown add-category">
+                                            <button class="form-control dropdown-toggle" 
+                                                    id="navbarDropdown" role="button" 
+                                                    data-toggle="dropdown" 
+                                                    aria-haspopup="true" 
+                                                    aria-expanded="false"><span>Кількість</span>
+                                            </button>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Кількість</a>
+                                                <a class="dropdown-item" href="#">Кількість</a>
+                                                <a class="dropdown-item" href="#">Кількість</a>
+                                                <a class="dropdown-item" href="#">Кількість</a>
+                                                <a class="dropdown-item" href="#">Кількість</a>
+                                                <a class="dropdown-item" href="#">Кількість</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <div class="dropdown add-category">
+                                            <button class="form-control dropdown-toggle" 
+                                                    id="navbarDropdown" role="button" 
+                                                    data-toggle="dropdown" 
+                                                    aria-haspopup="true" 
+                                                    aria-expanded="false"><span>Місцезнаходження</span>
+                                            </button>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Місцезнаходження</a>
+                                                <a class="dropdown-item" href="#">Місцезнаходження</a>
+                                                <a class="dropdown-item" href="#">Місцезнаходження</a>
+                                                <a class="dropdown-item" href="#">Місцезнаходження</a>
+                                                <a class="dropdown-item" href="#">Місцезнаходження</a>
+                                                <a class="dropdown-item" href="#">Місцезнаходження</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <div class="dropdown add-category">
+                                            <button class="form-control dropdown-toggle" 
+                                                    id="navbarDropdown" role="button" 
+                                                    data-toggle="dropdown" 
+                                                    aria-haspopup="true" 
+                                                    aria-expanded="false"><span>Статус</span>
+                                            </button>
+
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Статус</a>
+                                                <a class="dropdown-item" href="#">Статус</a>
+                                                <a class="dropdown-item" href="#">Статус</a>
+                                                <a class="dropdown-item" href="#">Статус</a>
+                                                <a class="dropdown-item" href="#">Статус</a>
+                                                <a class="dropdown-item" href="#">Статус</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <button type="submit" class="btn btn-publish">Опубліковати</button>
+                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <button type="submit" class="btn btn-draft">Чорновик</button>
+                                    </div>
+                                </div>
+                            </form> 
+                        </div>
+                        <div class="col-sm-3">
+                            <form>
+                                <div class="form-row form-row--add">
+                                    <div class="form-group col-sm-12"> 
+                                        <button class="btn btn-top3-active">
+                                            <img src="img/trophy.png" alt="">
+                                            <p>Послуга</p>
+                                            <p><strong>В топ-3 на тиждень</strong></p>
+                                        </button>
+                                    </div> 
+                                    <div class="form-group col-sm-12"> 
+                                        <button class="btn btn-top5-active">
+                                        <img src="img/star.png" alt="">
+                                            <p>Послуга</p>
+                                            <p><strong>В топ-5 на тиждень</strong></p></button>
+                                    </div> 
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <nav class="footer-nav">
+                    <div class="col-lg-3 footer-nav-title-costumers">
+                        <ul class="footer-nav-list">
+                            <span>Покупателям</span>
+                            <li class="footer-nav-item"><a href="#">Как стать покупателем?</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-nav-title-sellers">
+                        <ul class="footer-nav-list">
+                            <span>Продавцам</span>
+                            <li class="footer-nav-item"><a href="#">Как стать покупателем?</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-nav-title-aboutus">
+                        <ul class="footer-nav-list">
+                            <span>О нас</span>
+                            <li class="footer-nav-item"><a href="#">Как стать покупателем?</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-nav-title-contacts">
+                        <ul class="footer-nav-list">
+                            <span>Контакты</span>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

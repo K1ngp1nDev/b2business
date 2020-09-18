@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/messager.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d33db132e0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.video.play.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.css">
+</head>
+<body>
+    <header class="header sticky-top">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar input-group align-items-center">
+                            <a href="#" class="handle_margin_nav">
+                                <img src="img/New-business-logo-UA.svg" alt="logo" class='logo'>
+                            </a>
+                            <input type="text" class="form-control input-search" 
+                            placeholder="Пошук">
+                            <div class="dropdown">
+                                <button class="form-control dropdown-toggle bg-light region_search" 
+                                id="navbarDropdown" role="button" 
+                                data-toggle="dropdown" 
+                                aria-haspopup="true" 
+                                aria-expanded="false"><span>Київська область</span></button>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Київська область</a>
+                                    <a class="dropdown-item" href="#">Київська область</a>
+                                    <a class="dropdown-item" href="#">Київська область</a>
+                                </div>
+                                </div>
+                            <div class="input-group-append handle_margin_nav">
+                                <button class="btn btn-search" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                            <button type="button" class="btn btn-login handle_margin_nav handle_padding_btn">Увійти</button>
+                            
+                            <button class="navbar-dark navbar-toggler navbar-light" 
+                                    type="button" data-toggle="collapse" 
+                                    data-target="#navbar" 
+                                    aria-controls="navbarSupportedContent" 
+                                    aria-expanded="false" 
+                                    aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav text-right">
+                                <li class="nav-item"><a class="nav-link" href="#link-1">Меню 1</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-2">Меню 2</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-3">Меню 3</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-4">Меню 4</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#link-5">Меню 5</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+    </header>
+    
+    <section class="messager-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 messager-column-wrapper">
+                    <div class="messager-search">
+                        <form class="form">
+                            <input class="form-control messager-search-input" 
+                                type="search" placeholder="Пошук у чаті" 
+                                aria-label="Search">
+                            <button class="btn btn-outline btn-messager-search" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="messager-contacts--wrapper">
+                        <ul class="messager-contacts-list list-group">
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo1.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Agency</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">11:29</span>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo2.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Cheport</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">1:02</span>
+                                    <div class="messager-contact-count">41</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo3.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Business</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">14:59</span>
+                                    <div class="messager-contact-count">7</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo2.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Cheport</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">1:02</span>
+                                    <div class="messager-contact-count">41</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo3.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Business</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">14:59</span>
+                                    <div class="messager-contact-count">7</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo2.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Cheport</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">1:02</span>
+                                    <div class="messager-contact-count">41</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo3.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Business</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">14:59</span>
+                                    <div class="messager-contact-count">7</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo2.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Cheport</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">1:02</span>
+                                    <div class="messager-contact-count">41</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo3.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Business</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">14:59</span>
+                                    <div class="messager-contact-count">7</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo2.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Cheport</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">1:02</span>
+                                    <div class="messager-contact-count">41</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo3.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Business</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">14:59</span>
+                                    <div class="messager-contact-count">7</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo2.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Cheport</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">1:02</span>
+                                    <div class="messager-contact-count">41</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo3.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Business</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. e11111111111111111111111111111111111sculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">14:59</span>
+                                    <div class="messager-contact-count">7</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo2.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Cheport</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">1:02</span>
+                                    <div class="messager-contact-count">41</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo3.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Business</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">14:59</span>
+                                    <div class="messager-contact-count">7</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo2.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Cheport</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">1:02</span>
+                                    <div class="messager-contact-count">41</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo3.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Business</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">14:59</span>
+                                    <div class="messager-contact-count">7</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo2.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Cheport</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">1:02</span>
+                                    <div class="messager-contact-count">41</div>
+                            </li>
+                            <li class="messager-contact-item list-group-item d-flex">
+                                    <img class="messager-contact-photo" 
+                                    src="img/photo3.png" alt="photo">
+                                    <span class="messager-contact-name"><strong>Business</strong></span>
+                                    <span class="messager-contact-text-preview">А Р. esculentus esculentus живе у пониззі Ду...</span>
+                                    <span class="messager-contact-time">14:59</span>
+                                    <div class="messager-contact-count">7</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-7 messager-window-correspondence">
+                    <div class="messager-window">
+                        <header class="messager-contact-header">
+                            <img class="messager-contact-photo" 
+                                    src="img/photo1.png" alt="photo">
+                            <span class="messager-contact-name--header"><strong>Agency</strong></span>
+                            <span class="messager-contact-text-preview--header">Був у мережі 15 хв тому</span>
+                        </header>
+                        <main class="messager-contact-main">
+                                <div class="message-main--wrapper">
+                                    <span class="message-date">Неділя, 20 липня</span>
+                                    <div class="message-from">
+                                        <img class="messager-contact-photo--main" 
+                                            src="img/photo1.png" alt="photo">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Maxime nemo beatae amet, praesentium eveniet rem. Eligendi labore corrupti 
+                                        tenetur nemo enim, adipisci aperiam delectus rem.</span>
+                                        <p><span class="messager-contact-time--main">14:59</span></p>
+                                    </div>
+
+                                    <div class="message-to">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores.</span>
+                                        <p><span class="messager-contact-time--main">15:19</span></p>
+                                    </div>
+
+                                    <div class="message-from">
+                                        <img class="messager-contact-photo--main" 
+                                            src="img/photo1.png" alt="photo">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Maxime nemo beatae amet, praesentium eveniet rem. Eligendi labore corrupti 
+                                        tenetur nemo enim, adipisci aperiam delectus rem.</span>
+                                        <p><span class="messager-contact-time--main">14:59</span></p>
+                                    </div>
+
+                                    <div class="message-from">
+                                        <img class="messager-contact-photo--main" 
+                                            src="img/photo1.png" alt="photo">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Maxime nemo beatae amet, praesentium eveniet rem. Eligendi labore corrupti 
+                                        tenetur nemo enim, adipisci aperiam delectus rem.</span>
+                                        <p><span class="messager-contact-time--main">14:59</span></p>
+                                    </div>
+
+                                    <div class="message-from">
+                                        <img class="messager-contact-photo--main" 
+                                            src="img/photo1.png" alt="photo">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Maxime nemo beatae amet, praesentium eveniet rem. Eligendi labore corrupti 
+                                        tenetur nemo enim, adipisci aperiam delectus rem.</span>
+                                        <p><span class="messager-contact-time--main">14:59</span></p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <span class="message-date">Понеділок, 21 липня</span>
+                                    <div class="message-from">
+                                        <img class="messager-contact-photo--main" 
+                                            src="img/photo1.png" alt="photo">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Maxime nemo beatae amet, praesentium eveniet rem. Eligendi labore corrupti 
+                                        tenetur nemo enim, adipisci aperiam delectus rem.</span>
+                                        <p><span class="messager-contact-time--main">14:59</span></p>
+                                    </div>
+
+                                    <div class="message-to">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores.</span>
+                                        <p><span class="messager-contact-time--main">15:19</span></p>
+                                    </div>
+
+                                    <div class="message-from">
+                                        <img class="messager-contact-photo--main" 
+                                            src="img/photo1.png" alt="photo">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Maxime nemo beatae amet, praesentium eveniet rem. Eligendi labore corrupti 
+                                        tenetur nemo enim, adipisci aperiam delectus rem.</span>
+                                        <p><span class="messager-contact-time--main">14:59</span></p>
+                                    </div>
+
+                                    <div class="message-to">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores.</span>
+                                        <p><span class="messager-contact-time--main">15:19</span></p>
+                                    </div>
+
+
+                                    <div class="message-to">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                        elit. Commodi, asperiores.</span>
+                                        <p><span class="messager-contact-time--main">15:19</span></p>
+                                    </div>
+                                    <div class="message-from">
+                                        <img class="messager-contact-photo--main" 
+                                            src="img/photo1.png" alt="photo">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Maxime nemo beatae amet, praesentium eveniet rem. Eligendi labore corrupti 
+                                        tenetur nemo enim, adipisci aperiam delectus rem.</span>
+                                        <p><span class="messager-contact-time--main">14:59</span></p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <span class="message-date">Вівторок, 22 липня</span>
+                                    <div class="message-from">
+                                        <img class="messager-contact-photo--main" 
+                                            src="img/photo1.png" alt="photo">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Maxime nemo beatae amet, praesentium eveniet rem. Eligendi labore corrupti 
+                                        tenetur nemo enim, adipisci aperiam delectus rem.</span>
+                                        <p><span class="messager-contact-time--main">14:59</span></p>
+                                    </div>
+                                    <div class="message-from">
+                                        <img class="messager-contact-photo--main" 
+                                            src="img/photo1.png" alt="photo">
+                                        <span class="messager-contact-text-preview--main">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Maxime nemo beatae amet, praesentium eveniet rem. Eligendi labore corrupti 
+                                        tenetur nemo enim, adipisci aperiam delectus rem.</span>
+                                        <p><span class="messager-contact-time--main">14:59</span></p>
+                                    </div>
+                                </div>
+                        </main>
+                        <footer class="messager-footer">
+                            <form>
+                                <div class="form-group row justify-content-center">
+                                    <div class="messager-footer--btns col-sm-2">
+                                        <div class="btn-group dropup">
+                                            <i class="fas fa-plus-circle messager-footer-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+
+                                            <div class="dropdown-menu">
+                                                <i class="fas fa-plus-circle"></i>
+                                                <i class="fas fa-plus-circle"></i>
+                                                <i class="fas fa-plus-circle"></i>
+                                                <i class="fas fa-plus-circle"></i>
+                                                <i class="fas fa-plus-circle"></i>
+                                            </div>
+                                        </div>
+                                        <label for="messager-file-upload--doc">
+                                            <i class="fas fa-file messager-footer-icons"></i>
+                                            </label>
+                                        <input type="file" id="messager-file-upload--doc"
+                                        accept=".pdf, .doc, .txt">
+                                        
+                                        
+                                        <label for="messager-file-upload--img">
+                                            <i class="fas fa-image messager-footer-icons"></i>
+                                            </label>
+                                        <input type="file" id="messager-file-upload--img"
+                                        accept=".jpg, .jpeg, .png"
+                                        >
+                                    </div>
+                                    <div class="messager-footer--input col-sm-9">
+                                        <input class="form-control" type="text"
+                                         placeholder="Повідомлення" />
+                                         <i class="fas fa-paper-plane messager-footer-send-btn"></i>
+                                    </div>
+                                </div>
+                            </form>
+                        </footer>
+                    <div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <nav class="footer-nav">
+                    <div class="col-lg-3 footer-nav-title-costumers">
+                        <ul class="footer-nav-list">
+                            <span>Покупателям</span>
+                            <li class="footer-nav-item"><a href="#">Как стать покупателем?</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-nav-title-sellers">
+                        <ul class="footer-nav-list">
+                            <span>Продавцам</span>
+                            <li class="footer-nav-item"><a href="#">Как стать покупателем?</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-nav-title-aboutus">
+                        <ul class="footer-nav-list">
+                            <span>О нас</span>
+                            <li class="footer-nav-item"><a href="#">Как стать покупателем?</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                            <li class="footer-nav-item"><a href="#">Рекомендации по профилю</a></li>
+                            <li class="footer-nav-item"><a href="#">О безопасных контактах</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-nav-title-contacts">
+                        <ul class="footer-nav-list">
+                            <span>Контакты</span>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                            <li class="footer-nav-item"><a href="#">Lorem ipsum dolor sit amet.Lorem ipsum.</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

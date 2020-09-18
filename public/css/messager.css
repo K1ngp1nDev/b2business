@@ -1,0 +1,310 @@
+.messager-wrapper {
+    background-color: #F3F6F8;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.messager-contacts-list .active {
+    background-color: #F1F5FB !important;
+}
+
+
+.messager-column-wrapper,
+.messager-window-correspondence {
+    background-color: #fff;
+    height: calc(100vh - 70px);
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+}
+
+.messager-column-wrapper {
+    padding-right: 8px !important;
+    border-right: 0.1px solid rgb(219, 219, 219);
+}
+
+.messager-window-correspondence {
+    padding-left: 0 !important;
+}
+
+.messager-search-input {
+    /*border-bottom-left-radius: 0px !important;*/
+
+}
+
+.messager-search-input::placeholder {
+    color: #000 !important;
+    opacity: 0.3 !important;
+}
+.btn-messager-search {
+    background-color: #4B7FDB !important;
+    border-radius: 0 2px 2px 0 !important;
+    color: #fff !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.messager-search {
+    padding-left: 10px;
+    margin: 35px 0 24px 0;
+    max-width: 95%;
+    position: relative;
+}
+
+.messager-contacts--wrapper {
+    /*min-height: 50vh;*/
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.messager-contacts-list {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.messager-contacts-list
+.list-group-item {
+    padding: .5rem 1.25rem !important;
+}
+
+.messager-contacts-list li:first-of-type {
+    /*background-color: #F1F5FB;*/
+}
+
+.messager-contact-item {
+    max-height: 80px;
+    position: relative;
+    cursor: pointer;
+}
+
+.messager-contact-time {
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    font-size: 10px;
+    color: rgb(94, 93, 93);
+    /* font-weight: 700; */
+}
+
+.messager-contact-count {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: #6B83D7;
+    border-radius: 50%;
+    width: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.messager-contact-name {
+    color: #000;
+    position: absolute;
+    top: 5px;
+    font-size: 14px;
+}
+
+.messager-contact-text-preview {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 25px 0 0 0;
+    font-size: 14px;
+    color: #949494;
+}
+
+.messager-contact-photo {
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.messager-window-correspondence {
+    padding-right: 0 !important;
+    position: relative;
+}
+
+.messager-contact-main {
+    min-height: 50vh;
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.messager-contact-header {
+    padding: 20px;
+    border-bottom: 0.1px solid rgb(219, 219, 219);
+}
+
+.messager-contact-name--header {
+    position: absolute;
+    /*left: 100px;*/
+    top: 5px;
+    font-size: 14px;
+}
+
+.messager-contact-text-preview--header {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*padding-left: 15px;*/
+    font-size: 14px;
+}
+
+.message-main--wrapper {
+    padding: 20px 60px;
+    position: relative;
+}
+
+.messager-contact-photo--main {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    left: 20px;
+}
+
+.message-to .messager-contact-time--main {
+    float: right;
+    color: #fff;
+    font-size: 10px;
+    /* font-weight: 700; */
+}
+
+.message-from .messager-contact-time--main {
+    float: right;
+    color: rgb(94, 93, 93);
+    font-size: 10px;
+    /* font-weight: 700; */
+}
+
+.message-from {
+    color: #000;
+    background: #EDF0F5;
+    margin: 20px 0;
+    padding: 5px 15px;
+    word-wrap: break-word;
+    max-width: 400px; /*needresponsive*/
+    /*needresponsive*/
+    float: left;
+    border-radius: 0px 10px 10px 10px;
+    -webkit-border-radius: 0px 10px 10px 10px;
+    -moz-border-radius: 0px 10px 10px 10px;
+    -ms-border-radius: 0px 10px 10px 10px;
+    -o-border-radius: 0px 10px 10px 10px;
+}
+
+.message-date {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: #949494;
+}
+
+.message-to {
+    color: #fff;
+    background: #4B7FDB;
+    margin: 20px 0;
+    padding: 5px 15px;
+    max-width: 400px; /*needresponsive*/
+    float: right;
+    word-wrap: break-word;
+    border-radius: 10px 10px 0 10px;
+    -webkit-border-radius: 10px 10px 0 10px;
+    -moz-border-radius: 10px 10px 0 10px;
+    -ms-border-radius: 10px 10px 0 10px;
+    -o-border-radius: 10px 10px 0 10px;
+}
+
+.clearfix { clear: both; }
+
+.messager-footer {
+    /*margin-top: 20px;*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    max-height: 30vh;
+}
+
+/*.messager-footer .form-group {*/
+/*    margin-right: 0 !important;*/
+/*    margin-left: 0 !important;*/
+/*}*/
+
+.messager-footer--btns
+.btn-group {
+    vertical-align: unset !important;
+}
+
+.messager-footer--btns {
+    white-space: nowrap;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 5px;
+}
+
+.messager-footer-icons {
+    margin-right: 15px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+}
+
+.messager-footer--btns i {
+    margin-right: 15px;
+    color: #4B7FDB;
+    cursor: pointer;
+}
+
+.messager-footer--input {
+    height: auto;
+    margin-right: 10px;
+    position: relative;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+/*messager-footer--input */
+
+.messager-footer--input input {
+    padding-right: 30px !important;
+}
+
+.messager-contact-text-preview--main {
+    white-space: normal;
+}
+
+.messager-footer-send-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #4B7FDB;
+    cursor: pointer;
+}
+
+#messager-file-upload--doc,
+#messager-file-upload--img {
+    display: none;
+}
+
+.clearfix { clear: both; }
+
+#textarea {
+    resize: none;
+    margin-right: 10px;
+    padding-right: 40px;
+}
+
+#textareaFeedback {
+    font-size: 10px;
+}

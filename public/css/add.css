@@ -1,0 +1,111 @@
+.add-section-wrapper {
+    background: #F3F6F8;
+}
+
+.add-section-title {
+    margin-top: 35px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.btn-publish,
+.btn-draft {
+    width: 100%;
+    height: 40px;
+    background: #4B7FDB !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    color: #fff !important;
+}
+
+.btn-draft {
+    background: transparent !important;
+    color: #000 !important;
+    border: 1px solid #4B7FDB !important;
+}
+
+.btn-top3-active,
+.btn-top5-active {
+    width: 100%;
+    min-height: 177px;
+    background: #FFF !important;
+    box-shadow: 0px 2px 2px rgba(45, 19, 71, 0.1);
+    border-radius: 5px;
+}
+
+.btn-top3-active:hover,
+.btn-top5-active:hover {
+    background: rgba(181, 182, 255, 0.39) !important;
+}
+
+.form-row--add {
+    justify-content: space-between;
+}
+
+/*.form-row--add*/
+/*.dropzone*/
+/*.dz-preview {*/
+/*    !*margin: 0;*!*/
+/*}*/
+
+.form-row--add
+.dropzone
+.dz-error {
+    display: none;
+}
+
+.form-row--add
+.dropzone {
+    position: relative;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-dropzone-wrapper {
+    padding-left: 10px !important;
+    padding-right: 0px !important;
+    justify-content: space-between;
+}
+
+.form-group .form-control {
+    text-align: left;
+}
+
+/*.dropdown-toggle::after {*/
+/*    !*margin-top: 12px;*!*/
+/*    !*float: right;*!*/
+/*    !* margin-right: 0 !important; *!*/
+/*}*/
+
+.dropzone .dz-message {
+    color: #838c93;
+}
+
+.publish_new_offer .burger {
+    visibility: hidden;
+}
+
+.publish_new_offer .burger span {
+    visibility: visible;
+}
+/*.dropzone .dz-message .dz-button {*/
+/*    visibility: hidden;*/
+/*    position: relative;*/
+/*}*/
+
+/*.dropzone .dz-message .dz-button:after {*/
+/*    content: 'Додати фото';*/
+/*    position: absolute;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    z-index: 999;*/
+/*    top: 0;*/
+/*    left: 35%;*/
+/*    visibility: visible;*/
+/*}*/
+
+.dz-preview .dz-error .dz-complete .dz-image-preview {
+    display: none;
+    /*background-color: #0b2e13 !important;*/
+}

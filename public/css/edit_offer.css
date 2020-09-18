@@ -1,0 +1,31 @@
+.edit-photos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*max-width: 200px;*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    position: relative;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.edit-photos-list-item {
+    /*max-width: 100px;*/
+    width: 200px;
+    height: 100px;
+    margin: 2px;
+}
+
+/*.form-row--add*/
+/*.dropzone*/
+/*.dz-error {*/
+/*    display: none;*/
+/*}*/
+
+.edit-photos-list-item {
+
+}

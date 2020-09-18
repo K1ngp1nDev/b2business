@@ -1,0 +1,44 @@
+.contactus-section-wrapper 
+.form-control {
+    text-align: left !important;
+}
+
+.contactus-section-wrapper
+.dropdown-item {
+    width: 100%;
+}
+
+.department-list {
+    padding: 20px 0 0 0;
+}
+
+.department-list span {
+    color: #8B9099; 
+}
+
+.btn-send-notification {
+    margin: 25px 0 50px 0;
+    width: 150px;
+    height: 40px;
+    background: #4B7FDB !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    color: #fff !important;
+}
+
+.contactus-section-wrapper input::placeholder {
+    color: #8B9099;
+}
+
+.contactus-form {
+    margin-top: 20px;
+}
+
+.contactus-form  .form-group {
+    margin-bottom: 0 !important;
+}
+
+.dropdown-toggle::after {
+    margin-top: 12px;
+    float: right;
+}

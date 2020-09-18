@@ -1,0 +1,122 @@
+.app_main_content {
+    min-height: 70vh;
+    padding-top: 70px;
+}
+
+@media (max-width: 1920px) {
+    .container {
+        width: 100%;
+        max-width: 1140px;
+    }
+    .input-search {
+        width: 400px !important;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .container {
+        width: 100%;
+        max-width: 1140px;
+    }
+    /*.select2 .select2-container .select2-container--default,*/
+    /*.select2-selection .select2-selection--single,*/
+    .input-search {
+        width: 400px !important;
+    }
+}
+
+/*@media (max-width: 1440px) {*/
+/*}*/
+
+@media (max-width: 1200px) {
+    .aside-and-slider .owl-prev,
+    .aside-and-slider .owl-next {
+        top: 40% !important;
+        margin-top: 0 !important;
+    }
+    #carousel-custom {
+         margin: 0 !important;
+         width: auto !important;
+    }
+    /*.select2 .select2-container .select2-container--default,*/
+    /*.select2-selection .select2-selection--single,*/
+    .input-search {
+
+        width: 300px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sidebar-category-menu-list .fa-caret-right {
+        display: none;
+    }
+    .aside-and-slider .owl-prev,
+    .aside-and-slider .owl-next {
+        top: 30% !important;
+    }
+    .sidebar-category-menu-item {
+        padding-bottom: 5px;
+        font-size: 14px;
+    }
+    .aside-and-slider .owl-prev i,
+    .aside-and-slider .owl-next i {
+        padding: 10px 5px !important;
+    }
+    .companies-main-slider .owl-prev i,
+    .companies-main-slider .owl-next i {
+        padding: 10px 5px !important;
+    }
+    .logo {
+        height: 50px;
+    }
+    .card-deck {
+        grid-template-columns: repeat(3, minmax(190px, 1fr)) !important;
+    }
+    .input-search {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #owl-carousel-1 {
+        margin-top: 40px !important;
+    }
+    .hidden-search .dropdown-menu {
+        padding: 0 !important;
+        min-width: 20rem !important;
+    }
+    .hidden-search .btn-search {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .dropdown-toggle::after {
+        margin: 0;
+    }
+    .btn-card-checkout {
+        width: auto !important;
+    }
+    .carousel-indicators {
+        display: block !important;
+    }
+    .card-deck {
+        grid-template-columns: repeat(2, minmax(190px, 1fr)) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .aside-and-slider .owl-prev,
+    .aside-and-slider .owl-next {
+        top: 50% !important;
+    }
+    #owl-carousel-1 {
+        margin-top: 0 !important;
+    }
+    .card-deck {
+        grid-template-columns: repeat(1, minmax(120px, 1fr)) !important;
+    }
+    .card-deck img {
+        max-height: unset !important;
+    }
+}
